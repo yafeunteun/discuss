@@ -1,4 +1,29 @@
-# Discuss
+* Discuss
+
+#+BEGIN_QUOTE
+Reddit like webapp built with Phoenix framework.
+#+END_QUOTE
+
+** Environment Variables 
+
+| Variable Name        | Value             |
+|----------------------+-------------------|
+| GITHUB_CLIENT_ID     | Github app id     |
+| GITHUB_CLIENT_SECRET | Github app secret |
+
+
+*** Exemple: 
+
+Create a file .env in the root directory 
+
+#+BEGIN_SRC sh
+export GITHUB_CLIENT_ID="b932732e52e63b6d2bc3"
+export GITHUB_CLIENT_SECRET="d77a8926b14b5de98327e3fce368d9c02171ede6"
+#+END_SRC
+
+then before starting the server with =mix phoenix.server= source the env file using =source .env=.
+
+
 
 To start your Phoenix app:
 
