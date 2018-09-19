@@ -26,7 +26,14 @@ defmodule Discuss.AuthController do
 	|> put_flash(:error, "Error signin in")
 	|> redirect(to: topic_path(conn, :index))
     end
-  end 
+  end
+
+  def signout(conn, _params) do
+    conn
+    |> configure_session(drop: true)
+    |> redirect(to: topic_path(conn, :index))
+  end
+
   
   defp insert_or_update_user(changeset) do
 
