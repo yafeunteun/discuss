@@ -15,6 +15,6 @@
 <div class="fixed-action-btn">
   <%= link to: topic_path(@conn, :new), class: "btn-floating btn-large waves-light red" do %> 
     <i class="material-icons">add</i>
-  <%= end %> 
+  <% end %> 
 </div>
 
