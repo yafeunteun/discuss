@@ -23,6 +23,8 @@ erl_crash.dump
 # variables.
 /config/prod.secret.exs
 
+# Environment Variables
+/.env
 
 # Created by https://www.gitignore.io/api/emacs,linux,macos
 
